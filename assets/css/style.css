@@ -1,0 +1,44 @@
+/* KCC student website project — shared styles */
+:root { --blue:#0752ad; --navy:#062755; --gold:#f2c94d; --ink:#1b2f49; --pale:#f3f7fc; }
+* { scroll-behavior:smooth; }
+body { font-family:Montserrat,Arial,sans-serif; color:var(--ink); }
+.navbar { background:#fff; box-shadow:0 3px 20px #06295c14; }
+.brandmark { width:48px; height:48px; border-radius:50%; display:grid; place-items:center; background:var(--blue); color:#fff; border:3px solid var(--gold); font-weight:900; }
+.brand-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+.brand-name { color:var(--navy); font-weight:800; line-height:1.05; }
+.brand-name small { font-size:.72rem; letter-spacing:.6px; }
+.nav-link { font-weight:650; color:#263a57!important; }
+.nav-link:hover,.nav-link:focus { color:var(--blue)!important; }
+.hero { min-height:76vh; display:flex; align-items:center; color:#fff; position:relative; background:url('../img/kcc-building.jpg') center 45%/cover no-repeat; }
+.hero::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#031a3de8,#052d68b8 50%,#0324502b); }
+.hero-content { position:relative; padding:90px 0; max-width:790px; }
+.eyebrow { color:var(--gold); letter-spacing:3px; text-transform:uppercase; font-weight:800; font-size:.8rem; }
+.hero h1 { font-family:Georgia,serif; font-size:clamp(2.7rem,7vw,5rem); line-height:1.06; }
+.hero p { max-width:630px; color:#e8f1ff; line-height:1.85; font-size:1.1rem; }
+.btn-gold { background:var(--gold); color:var(--navy); font-weight:800; border:0; border-radius:30px; padding:13px 24px; }
+.btn-gold:hover { background:#ffe17b; color:var(--navy); }
+.section { padding:76px 0; }
+.section-title { font-family:Georgia,serif; color:var(--navy); font-weight:700; font-size:clamp(2rem,4vw,2.8rem); }
+.line { width:65px; height:4px; border-radius:5px; background:var(--gold); margin:17px auto 25px; }
+.soft { background:var(--pale); }
+.cardx { border:0; border-radius:20px; padding:27px; height:100%; box-shadow:0 12px 32px #072e6610; background:#fff; }
+.cardx h3 { color:var(--navy); font-weight:800; font-size:1.15rem; }
+.icon { width:52px; height:52px; border-radius:15px; background:#e7f0ff; display:grid; place-items:center; font-size:1.5rem; margin-bottom:15px; }
+.quote { background:var(--navy); color:#fff; border-radius:24px; padding:35px; }
+.quote p { color:#dce9fc; line-height:1.8; }
+.photo { width:100%; min-height:320px; max-height:520px; object-fit:cover; border-radius:22px; }
+.site-footer { background:#041a38; color:#d8e5f7; }
+.site-footer a { color:#d8e5f7; text-decoration:none; }
+.site-footer a:hover { color:var(--gold); }
+.pagehero { background:linear-gradient(110deg,var(--navy),var(--blue)); color:#fff; padding:65px 0; }
+.pagehero h1 { font-family:Georgia,serif; font-size:clamp(2.2rem,5vw,3.5rem); }
+.value-pill { border-radius:16px; padding:17px 19px; background:#fff; box-shadow:0 8px 24px #092c5c0b; font-weight:700; height:100%; display:flex; align-items:center; gap:12px; }
+.form-control { padding:12px; border-radius:12px; }
+.feature-link { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:20px; height:100%; border-radius:16px; background:#fff; box-shadow:0 8px 24px #092c5c0b; color:var(--navy); font-weight:700; text-decoration:none; }
+.feature-link:hover { color:var(--blue); transform:translateY(-2px); }
+@media (max-width:767px) { .hero { min-height:75vh; background-position:58% center; } .hero-content { padding:65px 0; } .section { padding:55px 0; } .pagehero { padding:48px 0; } }
